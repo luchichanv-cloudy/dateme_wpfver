@@ -1,0 +1,149 @@
+﻿<UserControl x:Class="dateme_wpfver.UseControlHome"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:dateme_wpfver"
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Loaded="UserControl_Loaded">
+
+    <Grid Margin="10 10 10 10" >
+        <Grid.Background>
+            
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Offset="0" Color="#232882"/>
+                    <GradientStop Offset="1" Color="Coral"/>
+                </LinearGradientBrush>
+            
+        
+        </Grid.Background>
+        
+            <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition>
+
+            </RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Column="0" CornerRadius="25" Background="LightPink" Margin="20 20 20 20">
+            <materialDesign:Card Grid.Column="0"  Background="{x:Null}" Margin="10 10 10 10">
+            <Grid>
+                <StackPanel >
+                        
+                            <Ellipse Height="150" Stroke="White" StrokeThickness="2" Margin="10,20"
+                                                    HorizontalAlignment="Center"  Width="150" Stretch="UniformToFill">
+                        <Ellipse.Fill>
+                            <ImageBrush x:Name="HomeAvatar" ImageSource="/couple.jpg"  />
+                        </Ellipse.Fill>
+                    </Ellipse>
+
+                    <Border Background="White" Margin="10 10 10 10" Opacity="0.8" CornerRadius="10"  Height="10" Width="300"/>
+
+                    <Border Height="208">
+                        <StackPanel HorizontalAlignment="Center" Margin="0,0,0,26">
+                            <TextBlock x:Name="NameTB" Text="abc" Foreground="White" FontSize="20" FontWeight="Bold" Width="230" TextWrapping="Wrap"/>
+                            <TextBlock x:Name="GenderTB" Text="abc" Foreground="White" FontSize="20" FontWeight="Bold" Width="230" TextWrapping="Wrap"/>
+                            <TextBlock x:Name="SocialMedia" Text="abc" Foreground="White" FontSize="20" FontWeight="Bold" Width="230" TextWrapping="Wrap"/>
+                            <TextBlock x:Name="AgeTB" Text="def" FontSize="20" Margin="0 5 0 0" Foreground="White" Width="230" TextWrapping="Wrap"/>
+                            <TextBlock Foreground="White" Margin="10 10 10 10">
+                                
+                            </TextBlock>
+                        </StackPanel>
+                    </Border>
+
+                </StackPanel>
+            </Grid>
+        </materialDesign:Card>
+        </Border>
+        <Border CornerRadius="25" Background="White" Grid.Column="1" Margin="20 20 20 20" >
+            <Grid Grid.Column="1" Margin="10 10 10 10" Background="White">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Border Background="#ffffff"   Margin="10" CornerRadius="15" Opacity="0.1"/>
+                <Border Background="#ffffff" Grid.Row="1" Margin="10"  CornerRadius="15" Opacity="0.1"/>
+                <Border Background="#ffffff" Grid.Row="2"   Margin="10" CornerRadius="15" Opacity="0.1"/>
+
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <Image Width="70" Height="70" Source="/couple.jpg" Margin="20 0 0 0" Stretch="UniformToFill">
+                        <Image.Clip>
+                            <EllipseGeometry RadiusX="35" RadiusY="35" Center="35,35"/>
+                        </Image.Clip>
+                    </Image>
+
+                    <StackPanel Margin="15 0 0 0">
+                        <TextBlock Text="Recently Liked" Foreground="Black" FontSize="23"></TextBlock>
+                        <TextBlock Text="Ausralia" Foreground="Black" FontWeight="Bold" FontSize="20"/>
+                        <Border CornerRadius="10" Height="20" Width="250" Background="#ffffff" Opacity="0.2" Margin="0 15 0 0">
+                            <Border Width="200" HorizontalAlignment="Left" CornerRadius="10">
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.5,1">
+                                        <GradientStop Offset="0" Color="#9490BE"/>
+                                        <GradientStop Offset="1" Color="#580083"/>
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                            </Border>
+                        </Border>
+                    </StackPanel>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Center">
+
+                    <Image Width="70" Height="70" Source="/couple.jpg" Margin="20 0 0 0" Stretch="UniformToFill">
+                        <Image.Clip>
+                            <EllipseGeometry RadiusX="35" RadiusY="35" Center="35,35"/>
+                        </Image.Clip>
+                    </Image>
+
+                    <StackPanel Margin="15 0 0 0">
+                        <TextBlock Text="Recently Matched" Foreground="Black" FontSize="23"></TextBlock>
+                        <TextBlock Text="India" Foreground="Black" FontWeight="Bold" FontSize="20"/>
+                        <Border CornerRadius="10" Height="20" Width="250" Background="#ffffff" Opacity="0.2" Margin="0 15 0 0">
+                            <Border Width="200" HorizontalAlignment="Left" CornerRadius="10">
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.5,1">
+                                        <GradientStop Offset="0" Color="#9490BE"/>
+                                        <GradientStop Offset="1" Color="#580083"/>
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                            </Border>
+                        </Border>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Row="2" VerticalAlignment="Center">
+                    <Image Width="70" Height="70" Source="/couple.jpg" Margin="20 0 0 0" Stretch="UniformToFill">
+                        <Image.Clip>
+                            <EllipseGeometry RadiusX="35" RadiusY="35" Center="35,35"/>
+                        </Image.Clip>
+                    </Image>
+
+                    <StackPanel Margin="15 0 0 0">
+                        <TextBlock Text="Your favorite" Foreground="Black" FontSize="23"></TextBlock>
+                        <TextBlock Text="Engand" Foreground="Black" FontWeight="Bold" FontSize="20"/>
+                        <Border CornerRadius="10" Height="20" Width="250" Background="#ffffff" Opacity="0.2" Margin="0 15 0 0">
+                            <Border Width="200" HorizontalAlignment="Left" CornerRadius="10">
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.5,1">
+                                        <GradientStop Offset="0" Color="#9490BE"/>
+                                        <GradientStop Offset="1" Color="#580083"/>
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                            </Border>
+                        </Border>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

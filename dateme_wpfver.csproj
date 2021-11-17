@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="couple.jpg" />
+    <None Remove="Dateme.png" />
+    <None Remove="fonts\Chivo-Light.ttf" />
+    <None Remove="leohoho-bYN8Oo7QCKw-unsplash.jpg" />
+    <None Remove="shaira-dela-pena-twoEJNpgdbI-unsplash.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="couple.jpg" />
+    <Resource Include="Dateme.png" />
+    <Resource Include="fonts\Chivo-Light.ttf" />
+	  <Resource Include="fonts\Chewy.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.1.8" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.1.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="leohoho-bYN8Oo7QCKw-unsplash.jpg" />
+    <Resource Include="shaira-dela-pena-twoEJNpgdbI-unsplash.jpg" />
+  </ItemGroup>
+
+</Project>

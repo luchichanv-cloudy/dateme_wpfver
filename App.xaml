@@ -1,0 +1,21 @@
+﻿<Application x:Class="dateme_wpfver.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:dateme_wpfver"
+             StartupUri="Login.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+                
+            </ResourceDictionary.MergedDictionaries>
+            <FontFamily x:Key="Chivo">pack://application:,,,/fonts/#Chivo Light</FontFamily>
+            <FontFamily x:Key="Chewy">pack://application:,,,/fonts/#Chewy</FontFamily>
+
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
